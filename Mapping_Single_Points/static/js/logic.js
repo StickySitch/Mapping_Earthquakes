@@ -2,7 +2,14 @@
 console.log('working!');
 
 // Creating a map object with a center and zoom level.
-let map = L.map('mapid').setView([40.7, -94.5], 4);
+let map = L.map('mapid').setView([34.0522, -118.2437], 14);
+
+// Adding marker layer
+let marker = L.circleMarker([34.0522, -118.2437], {
+    radius: 300,
+    color: 'black',
+    fillColor: '#ffffa1'
+}).addTo(map);
 
 // Adding tileLayer
 // We create the tile layer that will be the background of our map.
